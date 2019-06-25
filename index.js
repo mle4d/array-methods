@@ -19,9 +19,9 @@ function filter(arr, callback) {
 function find(arr, callback) {
   //const found = [];
   for(let i = 0; i < arr.length; i++) {
-    if(callback(arr[i])) return i; {
-  } 
-  return -1;
+    if(callback(arr[i])) return i; 
+    return -1;
+  }
 }
 function reduce(arr, callback, initialValue) {
   let acc = initialValue;
