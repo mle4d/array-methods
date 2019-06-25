@@ -8,16 +8,17 @@ function map(arr, callback) {
   return mapped;
 }
 function filter(arr, callback) {
-  const filter = [];
-  for(numbers.filter, number => number % 2 === 0) {
-    filter[i] = callback(arr[i]);
+  const filtered = [];
+  for(let i = 0; i < arr.length; i++) {
+    if(callback(arr[i])) {
+      filtered[filtered.length] = arr[i];
+    }
+    return filtered;
   }
-  console.log(filter);
-  return filter;
 }
 function find(arr, callback) {
   const found = [];
-  if(number => number % 2 === 0)
+  if()
     found[i] = callback(arr[i]); 
   console.log(find); 
   return found;
@@ -30,5 +31,6 @@ function find(arr, callback) {
 
 module.exports = {
   map,
-  filter
+  filter,
+  find
 };
