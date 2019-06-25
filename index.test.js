@@ -1,4 +1,4 @@
-const { map, filter, find } = require('./index');
+const { map, filter, find, reduce } = require('./index');
 
 describe('arrays', () => {
 
@@ -20,8 +20,18 @@ describe('arrays', () => {
   });
   it('returns number', () => {
     const numbers = [3, 6, 9];
-    const index = filter(numbers, number => number > 8);
+    const index = find(numbers, number => number > 8);
     expect(index).toEqual(-1);
   });
-
+  it('reduce or something', () => {
+    const numbers = [3, 6, 9];
+    const callback = jest.fn();
+    reduce(numbers, callback);
+    expect(callback).toHaveBeenCalled(numbers.length);
+  });
+  it('returns accumulator', () => {
+    const numbers = [3, 6, 9];
+    const sum = reduce(numbers, (acc, item) => acc + item, 0);
+    expect(sum).toEqual(18);
+  });
 });

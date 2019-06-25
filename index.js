@@ -23,14 +23,17 @@ function find(arr, callback) {
   } 
   return -1;
 }
-
-// const double = numbers.map(number => number * 2);
-
-
-// console.log(double);
+function reduce(arr, callback, initialValue) {
+  let acc = initialValue;
+  for(let i = 0; i < arr.length; i++) {
+    acc = callback(acc, arr[i]);
+  }
+  return acc;
+}
 
 module.exports = {
   map,
   filter,
-  find
+  find,
+  reduce
 };
