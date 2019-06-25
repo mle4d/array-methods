@@ -7,9 +7,14 @@ function map(arr, callback) {
   }
   return mapped;
 }
-const filter = numbers.filter(number => number % 2 === 0);
-console.log(filter);
-
+function filter(arr, callback) {
+  const filter = [];
+  for(numbers.filter, number => number % 2 === 0) {
+    filter[i] = callback(arr[i]);
+  }
+  console.log(filter);
+  return filter;
+}
 function find(arr, callback) {
   const found = [];
   if(number => number % 2 === 0)
