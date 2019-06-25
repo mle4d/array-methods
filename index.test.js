@@ -27,11 +27,11 @@ describe('arrays', () => {
     const numbers = [3, 6, 9];
     const callback = jest.fn();
     reduce(numbers, callback);
-    expect(callback).toHaveBeenCalled(numbers.length);
+    expect(callback).toHaveBeenCalledTimes(numbers.length);
   });
   it('returns accumulator', () => {
     const numbers = [3, 6, 9];
-    const sum = reduce(numbers, (acc, item) => acc + item, 0);
+    const sum = reduce(numbers, (acc, item) => acc + item);
     expect(sum).toEqual(18);
   });
 });
