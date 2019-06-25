@@ -10,6 +10,10 @@ function map(arr, callback) {
 const filter = numbers.filter(number => number % 2 === 0);
 console.log(filter);
 
+const found = numbers.find(number => number % 3 === 0);
+
+console.log(found);
+
 // const double = numbers.map(number => number * 2);
 
 
