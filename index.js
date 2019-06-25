@@ -10,9 +10,7 @@ function map(arr, callback) {
 
 const double = numbers.map(number => number * 2);
 
-module.export = map;
 
 console.log(double);
 
-
-
+module.export = map;
