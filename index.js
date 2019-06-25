@@ -10,3 +10,7 @@ function map(arr, callback) {
 
 map(numbers);
 
+module.export = map;
+
+
+
