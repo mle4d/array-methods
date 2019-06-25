@@ -7,10 +7,16 @@ function map(arr, callback) {
   }
   return mapped;
 }
+function filter() {
+  const evenNumbers = numbers.filter(number => number % 2 === 0);
+  return filter;
+}
+// const double = numbers.map(number => number * 2);
 
-const double = numbers.map(number => number * 2);
 
+// console.log(double);
 
-console.log(double);
-
-module.export = map;
+module.exports = {
+  map,
+  filter
+};
