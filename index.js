@@ -8,9 +8,11 @@ function map(arr, callback) {
   return mapped;
 }
 
-map(numbers);
+const double = numbers.map(number => number * 2);
 
 module.export = map;
+
+console.log(double);
 
 
 
