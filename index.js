@@ -1,4 +1,4 @@
-const numbers = [3, 6, 9];
+//const numbers = [3, 6, 9];
 
 function map(arr, callback) {
   const mapped = [];
@@ -17,11 +17,11 @@ function filter(arr, callback) {
   }
 }
 function find(arr, callback) {
-  const found = [];
-  if()
-    found[i] = callback(arr[i]); 
-  console.log(find); 
-  return found;
+  //const found = [];
+  for(let i = 0; i < arr.length; i++) {
+    if(callback(arr[i])) return i; {
+  } 
+  return -1;
 }
 
 // const double = numbers.map(number => number * 2);

@@ -18,6 +18,10 @@ describe('arrays', () => {
     const evens = filter(numbers, number => number % 2 === 0);
     expect(evens).toEqual([6]);
   });
+  it('returns number', () => {
+    const numbers = [3, 6, 9];
+    const index = filter(numbers, number => number > 8);
+    expect(index).toEqual(-1);
+  });
 
-  
 });
